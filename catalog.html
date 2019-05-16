@@ -12,7 +12,7 @@
             <img class="page-header__logo-img" src="img/logo--black.svg" width="164" height="36" alt="Логотип интернет-магазина «Девайс»">
           </a>
           <p class="page-header__search search">
-            <!-- Форма поиска -->
+            <!-- Здесь будет форма поиска -->
           </p>
           <ul class="page-header__user-nav user-nav">
             <li class="user-nav__item user-nav__item--profile">
@@ -77,13 +77,13 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <span class="filter__title">Фильтр:</span>
-          <!-- Форма фильтра -->
+          <!-- Здесь будет форма фильтра -->
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
           <div class="catalog__sorting sorting">
             <span class="sorting__title">Сортировка:</span>
-            <!-- Форма для сортировки -->
+            <!-- Здесь будет форма для сортировки -->
           </div>
           <ul class="catalog__list">
             <li class="catalog__item">
@@ -139,6 +139,21 @@
               <span class="catalog__price">4 900 руб.</span>
             </li>
           </ul>
+          <div class="catalog__pagination pagination">
+            <a class="pagination__button pagination__button--prev" href="#">Назад</a>
+            <a class="pagination__button pagination__button--next" href="#">Вперед</a>
+            <ul class="pagination__list">
+              <li class="pagination__item pagination__item--current">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
@@ -201,5 +216,22 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal--map">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <!-- Здесь будет карта на JS -->
+      <p>
+        <img class="modal__map" src="img/map-big.jpg" width="960" height="559" alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15" >
+      </p>
+      <button class="modal__close" type="button" name="modal__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    <section class="modal modal--feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <!-- Здесь будет форма обратной связи -->
+      <button class="modal__close" type="button" name="modal__close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
   </body>
 </html>

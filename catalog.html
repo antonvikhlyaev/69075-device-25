@@ -11,9 +11,15 @@
           <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-img" src="img/logo--black.svg" width="164" height="36" alt="Логотип интернет-магазина «Девайс»">
           </a>
-          <p class="page-header__search search">
-            <!-- Здесь будет форма поиска -->
-          </p>
+          <div class="page-header__search search">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+              <p class="search__item">
+                <label class="search__label" for="search">Поиск по сайту</label>
+                <input class="search__input" id="search" name="search" type="text" placeholder="Поиск по сайту">
+              </p>
+              <button class="search__button" type="submit">Найти</button>
+            </form>
+          </div>
           <ul class="page-header__user-nav user-nav">
             <li class="user-nav__item user-nav__item--profile">
               <a class="user-nav__link" href="profile.html">Валентин Петухов</a>
@@ -77,13 +83,89 @@
         <section class="filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <span class="filter__title">Фильтр:</span>
-          <!-- Здесь будет форма фильтра -->
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Стоимость</legend>
+              <!-- Здесь будет ползунок стоимости -->
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Цвет</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__checkbox" id="filter__color-black" type="checkbox" name="color-black">
+                  <label for="filter__color-black">Черный</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox" id="filter__color-white" type="checkbox" name="color-white">
+                  <label for="filter__color-white">Белый</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox" id="filter__color-blue" type="checkbox" name="color-blue">
+                  <label for="filter__color-blue">Синий</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox" id="filter__color-red" type="checkbox" name="color-red">
+                  <label for="filter__color-red">Красный</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__checkbox" id="filter__color-pink" type="checkbox" name="color-pink">
+                  <label for="filter__color-pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Bluetooth</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="filter__radio" id="filter__bluetooth-yes" type="radio" name="bluetooth" value="yes">
+                  <label for="filter__bluetooth-yes">Есть</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__radio" id="filter__bluetooth-no" type="radio" name="bluetooth" value="no">
+                  <label for="filter__bluetooth-no">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter__button button" type="submit">Показать</button>
+          </form>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
           <div class="catalog__sorting sorting">
             <span class="sorting__title">Сортировка:</span>
-            <!-- Здесь будет форма для сортировки -->
+            <form class="sorting__form" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="sorting__fieldset">
+                <legend class="visually-hidden">Вид сортировки</legend>
+                <ul class="sorting__list">
+                  <li class="sorting__item">
+                    <input class="sorting__radio" id="sorting__type-price" type="radio" name="sorting-type" value="price">
+                    <label for="sorting__type-price">По цене</label>
+                  </li>
+                  <li class="sorting__item">
+                    <input class="sorting__radio" id="sorting__type-type" type="radio" name="sorting-type" value="type">
+                    <label for="sorting__type-type">По типу</label>
+                  </li>
+                  <li class="sorting__item">
+                    <input class="sorting__radio" id="sorting__type-popular" type="radio" name="sorting-type" value="popular">
+                    <label for="sorting__type-popular">По популярности</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="sorting__fieldset">
+                <legend class="visually-hidden">Порядок сортировки</legend>
+                <ul class="sorting__list">
+                  <li class="sorting__item">
+                    <input class="sorting__arrow sorting__arrow--descending" id="sorting__order-descending" type="radio" name="sorting-order" value="descending">
+                    <label for="sorting__order-descending">По убыванию</label>
+                  </li>
+                  <li class="sorting__item">
+                    <input class="sorting__arrow sorting__arrow--ascending" id="sorting__order-ascending" type="radio" name="sorting-order" value="ascending">
+                    <label for="sorting__order-ascending">По возрастанию</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="sorting__button" type="submit">Сортировать</button>
+            </form>
           </div>
           <ul class="catalog__list">
             <li class="catalog__item">
@@ -220,7 +302,7 @@
       <h2 class="visually-hidden">Как до нас добраться?</h2>
       <!-- Здесь будет карта на JS -->
       <p>
-        <img class="modal__map" src="img/map-big.jpg" width="960" height="559" alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15" >
+        <img class="modal__map" src="img/map-big.png" width="960" height="559" alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15" >
       </p>
       <button class="modal__close" type="button" name="modal__close">
         <span class="visually-hidden">Закрыть</span>
@@ -228,7 +310,21 @@
     </section>
     <section class="modal modal--feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <!-- Здесь будет форма обратной связи -->
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal__item">
+          <label for="name">Ваше имя:</label>
+          <input class="modal__input" id="name" name="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal__item">
+          <label for="email">Ваш e-mail:</label>
+          <input class="modal__input" id="email" name="email" type="text" placeholder="email@example.com">
+        </p>
+        <p class="modal__item">
+          <label for="mail">Текст письма:</label>
+          <textarea class="modal__textarea" id="mail" name="mail"></textarea>
+        </p>
+        <button class="modal__button button" type="submit">Отправить</button>
+      </form>
       <button class="modal__close" type="button" name="modal__close">
         <span class="visually-hidden">Закрыть</span>
       </button>

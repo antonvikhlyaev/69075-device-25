@@ -11,9 +11,15 @@
           <a class="page-header__logo">
             <img class="page-header__logo-img" src="img/logo--black.svg" width="164" height="36" alt="Логотип интернет-магазина «Девайс»">
           </a>
-          <p class="page-header__search search">
-            <!-- Здесь будет форма поиска -->
-          </p>
+          <div class="page-header__search search">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+              <p class="search__item">
+                <label class="search__label" for="search">Поиск по сайту</label>
+                <input class="search__input" id="search" name="search" type="text" placeholder="Поиск по сайту">
+              </p>
+              <button class="search__button" type="submit">Найти</button>
+            </form>
+          </div>
           <ul class="page-header__user-nav user-nav">
             <li class="user-nav__item user-nav__item--login">
               <a class="user-nav__link" href="login.html">Войти</a>
@@ -309,7 +315,7 @@
       <h2 class="visually-hidden">Как до нас добраться?</h2>
       <!-- Здесь будет карта на JS -->
       <p>
-        <img class="modal__map" src="img/map-big.jpg" width="960" height="559" alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15" >
+        <img class="modal__map" src="img/map-big.png" width="960" height="559" alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15" >
       </p>
       <button class="modal__close" type="button" name="modal__close">
         <span class="visually-hidden">Закрыть</span>
@@ -317,7 +323,21 @@
     </section>
     <section class="modal modal--feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <!-- Здесь будет форма обратной связи -->
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal__item">
+          <label for="name">Ваше имя:</label>
+          <input class="modal__input" id="name" name="name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal__item">
+          <label for="email">Ваш e-mail:</label>
+          <input class="modal__input" id="email" name="email" type="text" placeholder="email@example.com">
+        </p>
+        <p class="modal__item">
+          <label for="mail">Текст письма:</label>
+          <textarea class="modal__textarea" id="mail" name="mail"></textarea>
+        </p>
+        <button class="modal__button button" type="submit">Отправить</button>
+      </form>
       <button class="modal__close" type="button" name="modal__close">
         <span class="visually-hidden">Закрыть</span>
       </button>

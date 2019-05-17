@@ -86,7 +86,23 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Стоимость</legend>
-              <!-- Здесь будет ползунок стоимости -->
+              <div class="filter__wrapper">
+                <div class="filter__range">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                  </div>
+                  <button class="filter__toggle filter__toggle--min" type="button">
+                    <span class="visually-hidden">Минимальное значение</span>
+                  </button>
+                  <button class="filter__toggle filter__toggle--max" type="button">
+                    <span class="visually-hidden">Максимальное значение</span>
+                  </button>
+                </div>
+                <div class="filter__prices">
+                  <p class="filter__price filter__price--min">от <span>0</span></p>
+                  <p class="filter__price filter__price--max">до <span>5000</span></p>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Цвет</legend>

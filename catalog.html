@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог | интернет-магазин гаджетов Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -34,32 +36,39 @@
           <div class="page-header__cart cart">
             <a class="cart__link" href="cart.html">Корзина</a>
           </div>
+          <div class="page-header__catalog catalog">
+            <a class="catalog__dropdown">Каталог товаров</a>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Умные часы</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
           <ul class="page-header__site-nav site-nav">
-            <li class="site-nav__item site-nav__item--dropdown-menu"><a href="#">Каталог товаров</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-menu__item">
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a href="#">Моноподы для селфи</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a href="#">Умные часы</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
             </li>
-            <li class="site-nav__item"><a href="delivery.html">Доставка</a></li>
-            <li class="site-nav__item"><a href="warranty.html">Гарантия</a></li>
-            <li class="site-nav__item"><a href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -70,13 +79,13 @@
         <div class="page-content__breadcrumbs breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-              <a href="index.html">Главная</a>
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item--current">
-              Моноподы для селфи
+              <a>Моноподы для селфи</a>
             </li>
           </ul>
         </div>
@@ -149,89 +158,89 @@
             <button class="filter__button button" type="submit">Показать</button>
           </form>
         </section>
-        <section class="catalog">
+        <section class="products">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
-          <div class="catalog__sorting sorting">
+          <div class="products__sorting sorting">
             <span class="sorting__title">Сортировка:</span>
             <ul class="sorting__list">
               <li class="sorting__item">
-                <a class="sorting__button" href="#">По цене</a>
+                <a class="sorting__link sorting__link--current" href="#">По цене</a>
               </li>
               <li class="sorting__item">
-                <a class="sorting__button" href="#">По типу</a>
+                <a class="sorting__link" href="#">По типу</a>
               </li>
               <li class="sorting__item">
-                <a class="sorting__button" href="#">По популярности</a>
+                <a class="sorting__link" href="#">По популярности</a>
               </li>
             </ul>
             <ul class="sorting__list">
               <li class="sorting__item">
-                <a class="sorting__button sorting__button--descending" href="#">
+                <a class="sorting__link sorting__link--descending" href="#">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
               <li class="sorting__item">
-                <a class="sorting__button sorting__button--ascending" href="#">
+                <a class="sorting__link sorting__link--ascending" href="#">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
             </ul>
           </div>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <p class="catalog__image">
+          <ul class="products__list">
+            <li class="products__item">
+              <p class="products__image">
                 <a href="catalog-item.html">
                   <img src="img/products/monopods/1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 </a>
               </p>
-              <h3 class="catalog__title">
+              <h3 class="products__title">
                 <a href="catalog-item.html">
                   Любительская селфи-палка
                 </a>
               </h3>
-              <span class="catalog__price">500 руб.</span>
+              <span class="products__price">500 руб.</span>
             </li>
-            <li class="catalog__item">
-              <p class="catalog__image">
+            <li class="products__item">
+              <p class="products__image">
                 <a href="catalog-item.html">
                   <img src="img/products/monopods/2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 </a>
               </p>
-              <h3 class="catalog__title">
+              <h3 class="products__title">
                 <a href="catalog-item.html">
                   Профессиональная селфи-палка
                 </a>
               </h3>
-              <span class="catalog__price">1 500 руб.</span>
+              <span class="products__price">1 500 руб.</span>
             </li>
-            <li class="catalog__item">
-              <p class="catalog__image">
+            <li class="products__item">
+              <p class="products__image">
                 <a href="catalog-item.html">
                   <img src="img/products/monopods/3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </a>
               </p>
-              <h3 class="catalog__title">
+              <h3 class="products__title">
                 <a href="catalog-item.html">
                   Непотопляемая селфи-палка
                 </a>
               </h3>
-              <span class="catalog__price">2 500 руб.</span>
+              <span class="products__price">2 500 руб.</span>
             </li>
-            <li class="catalog__item catalog__item--new">
-              <p class="catalog__image">
+            <li class="products__item products__item--new">
+              <p class="products__image">
                 <a href="catalog-item.html">
                   <img src="img/products/monopods/4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </a>
               </p>
-              <h3 class="catalog__title">
+              <h3 class="products__title">
                 <a href="catalog-item.html">
                   Селфи-палка «Следуй за мной»
                 </a>
               </h3>
-              <span class="catalog__price">4 900 руб.</span>
+              <span class="products__price">4 900 руб.</span>
             </li>
           </ul>
-          <div class="catalog__pagination pagination">
+          <div class="products__pagination pagination">
             <a class="pagination__button pagination__button--prev" href="#">Назад</a>
             <a class="pagination__button pagination__button--next" href="#">Вперед</a>
             <ul class="pagination__list">
@@ -276,9 +285,15 @@
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </p>
           <ul class="page-footer__site-nav site-nav">
-            <li class="site-nav__item"><a href="delivery.html">Доставка</a></li>
-            <li class="site-nav__item"><a href="warranty.html">Гарантия</a></li>
-            <li class="site-nav__item"><a href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__bottom">

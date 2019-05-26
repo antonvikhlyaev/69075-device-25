@@ -27,36 +27,37 @@
               <a class="user-nav__link" href="login.html">Войти</a>
             </li>
           </ul>
+          <!-- TODO: Обсудить создание списка «‎Сравнить» и «‎Корзина»  -->
           <div class="page-header__compare compare">
             <a class="compare__link" href="compare.html">Сравнить</a>
           </div>
           <div class="page-header__cart cart">
             <a class="cart__link" href="cart.html">Корзина</a>
           </div>
+          <div class="page-header__catalog catalog">
+            <a class="catalog__dropdown" href="catalog.html">Каталог товаров</a>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Умные часы</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
           <ul class="page-header__site-nav site-nav">
-            <li class="site-nav__item site-nav__item--dropdown-menu">
-              <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
-              <ul class="dropdown-menu" style="display: none;">
-                <li class="dropdown-menu__item">
-                  <a class="dropdown-menu__link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a class="dropdown-menu__link" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a class="dropdown-menu__link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a class="dropdown-menu__link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a class="dropdown-menu__link" href="#">Умные часы</a>
-                </li>
-                <li class="dropdown-menu__item">
-                  <a class="dropdown-menu__link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="delivery.html">Доставка</a>
             </li>
@@ -71,9 +72,9 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__container container">
-        <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
-        <section class="slider">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
+      <section class="slider">
+        <div class="slider__container container">
           <h2 class="visually-hidden">Супер девайсы нашего магазина</h2>
           <ul class="slider__list">
             <li class="slider__item">
@@ -157,43 +158,48 @@
               <span class="visually-hidden">Третий слайд</span>
             </button>
           </div>
-        </section>
-        <section class="products">
+        </div>
+      </section>
+      <section class="categories">
+        <div class="categories__container container">
           <h2 class="visually-hidden">Категории товаров</h2>
-          <ul class="products__list">
-            <li class="products__item products__item--vr">
-              <a class="products__link" href="#">
-                <h3 class="products__title">Виртуальная реальность</h3>
+          <ul class="categories__list">
+            <li class="categories__item categories__item--vr">
+              <a class="categories__link" href="#">
+                <h3 class="categories__title">Виртуальная реальность</h3>
               </a>
             </li>
-            <li class="products__item products__item--monopods">
-              <a class="products__link" href="#">
-                <h3 class="products__title">Моноподы для селфи</h3>
+            <li class="categories__item categories__item--monopods">
+              <a class="categories__link" href="#">
+                <h3 class="categories__title">Моноподы для селфи</h3>
               </a>
             </li>
-            <li class="products__item products__item--action-cameras">
-              <a class="products__link" href="#">
-                <h3 class="products__title">Экшн-камеры</h3>
+            <li class="categories__item categories__item--action-cameras">
+              <a class="categories__link" href="#">
+                <h3 class="categories__title">Экшн-камеры</h3>
               </a>
             </li>
-            <li class="products__item products__item--fitness-bracelets">
-              <a class="products__link" href="#">
-                <h3 class="products__title">Фитнес-браслеты</h3>
+            <li class="categories__item categories__item--fitness-bracelets">
+              <a class="categories__link" href="#">
+                <h3 class="categories__title">Фитнес-браслеты</h3>
               </a>
             </li>
-            <li class="products__item products__item--smart-watch">
-              <a class="products__link" href="#">
-                <h3 class="products__title">Умные часы</h3>
+            <li class="categories__item categories__item--smart-watch">
+              <a class="categories__link" href="#">
+                <h3 class="categories__title">Умные часы</h3>
               </a>
             </li>
-            <li class="products__item products__item--quadcopters">
-              <a class="products__link" href="#">
-                <h3 class="products__title">Квадрокоптеры</h3>
+            <li class="categories__item categories__item--quadcopters">
+              <a class="categories__link" href="#">
+                <h3 class="categories__title">Квадрокоптеры</h3>
               </a>
             </li>
           </ul>
-        </section>
-        <section class="advantages">
+        </div>
+      </section>
+      <section class="advantages">
+        <!-- TODO: После создания сетки добавить фоновые изображения -->
+        <div class="advantages__container container">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages__left">
             <button class="advantages__button button">Доставка</button>
@@ -216,8 +222,10 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="brands">
+        </div>
+      </section>
+      <section class="brands">
+        <div class="brands__container container">
           <h2 class="visually-hidden">Бренды</h2>
           <ul class="brands__list">
             <li class="brands__item brands__item--dji">
@@ -241,7 +249,9 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
+      <div class="page-content__wrapper">
         <section class="about">
           <h2 class="about__title">О нас</h2>
           <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.   </p>
@@ -257,7 +267,7 @@
           <h2 class="contacts__title">Контакты</h2>
           <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p class="contacts__map">
-            <!-- Здесь будет карта на JS -->
+            <!-- TODO: Сделать карту на JS -->
             <img class="contacts__map-image" src="img/map.png" width="560" height="222" alt="Наш офис находится по адресу: г. Москва, ул. Строителей, 15 ">
           </p>
           <a class="contacts__button button" href="feedback.html">Напишите нам</a>
@@ -288,9 +298,15 @@
             <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           </p>
           <ul class="page-footer__site-nav site-nav">
-            <li class="site-nav__item"><a href="delivery.html">Доставка</a></li>
-            <li class="site-nav__item"><a href="warranty.html">Гарантия</a></li>
-            <li class="site-nav__item"><a href="contacts.html">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="warranty.html">Гарантия</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__bottom">
@@ -322,7 +338,7 @@
     </footer>
     <section class="modal modal--map" style="display: none;">
       <h2 class="visually-hidden">Как до нас добраться?</h2>
-      <!-- Здесь будет карта на JS -->
+      <!-- TODO: Сделать карту на JS -->
       <p>
         <img class="modal__map" src="img/map-big.png" width="960" height="559" alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15" >
       </p>

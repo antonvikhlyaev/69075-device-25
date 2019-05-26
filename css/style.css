@@ -59,13 +59,16 @@ img {
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 .button {
@@ -86,15 +89,17 @@ img {
 }
 
 .search__input {
+  font: inherit;
+
   background-color: transparent;
   border: none;
-  font: inherit;
 }
 
 .search__button {
+  font: inherit;
+
   background: none;
   border: 2px solid #000000;
-  font: inherit;
 }
 
 .search__button:focus,
@@ -154,10 +159,10 @@ img {
 }
 
 .catalog__dropdown {
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -173,15 +178,15 @@ img {
 }
 
 .catalog__list {
-  list-style: none;
-
   /* FIXME: Временно */
   display: none;
+
+  list-style: none;
 }
 
 .catalog__link {
-  color: #000000;
   line-height: 36px;
+  color: #000000;
 }
 
 .catalog__link:focus,
@@ -195,10 +200,10 @@ img {
 
 .site-nav {
   list-style: none;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -222,36 +227,36 @@ img {
 }
 
 .slider__number {
+  font-weight: 800;
   font-size: 179.2px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   text-align: right;
   color: #ffffff;
   letter-spacing: 0.36px;
 }
 
 .slider__title {
+  font-weight: 800;
   font-size: 47px;
   line-height: 56px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   letter-spacing: 0.47px;
 }
 
 .slider__features thead {
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
   letter-spacing: 0.13px;
 }
 
 .slider__value {
+  font-weight: 300;
   font-size: 36px;
   line-height: 48px;
   font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: 300;
   color: #000000;
   letter-spacing: 0.36px;
 }
@@ -261,10 +266,10 @@ img {
 }
 
 .categories__item {
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   letter-spacing: 0.18px;
 }
@@ -286,10 +291,10 @@ img {
 }
 
 .advantages__title {
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   letter-spacing: 0.21px;
 }
@@ -323,10 +328,10 @@ img {
 }
 
 .about__title {
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   letter-spacing: 0.21px;
 }
@@ -336,24 +341,25 @@ img {
 }
 
 .about__item {
+  font-weight: 800;
   font-size: 16px;
   line-height: 40px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
 }
 
 .contacts__title {
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   font-family: "Gilroy", "Arial Black", sans-serif;
-  font-weight: 800;
   color: #000000;
   letter-spacing: 0.21px;
 }
 
 .page-footer {
   color: #ffffff;
+
   background-color: #464646;
 }
 
@@ -405,12 +411,12 @@ img {
 }
 
 .page-content__title {
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
   color: #000000;
   letter-spacing: 0.91px;
-  line-height: 48px;
 }
 
 .breadcrumbs__list {
@@ -419,6 +425,7 @@ img {
 
 .breadcrumbs__item {
   color: #000000;
+
   opacity: 0.3;
 }
 
@@ -440,14 +447,15 @@ img {
 }
 
 .filter__title {
-  background-color: #d9d9d9;
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #000000;
-  letter-spacing: 3.5px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  color: #000000;
   text-transform: uppercase;
+  letter-spacing: 3.5px;
+
+  background-color: #d9d9d9;
 }
 
 .filter__fieldset {
@@ -455,29 +463,32 @@ img {
 }
 
 .filter__legend {
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
   color: #000000;
   letter-spacing: 0.18px;
-  line-height: 24px;
 }
 
 .filter__prices {
-  opacity: 0.2;
-  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0;
-  line-height: 24px;
+
+  opacity: 0.2;
 }
 
 .filter__prices input {
+  width: auto;
+
+  font: inherit;
+
   background: none;
   border: none;
-  font: inherit;
-  width: auto;
 }
 
 .filter__list {
@@ -489,13 +500,13 @@ img {
 }
 
 .sorting__title {
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #000000;
-  letter-spacing: 3.5px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  color: #000000;
   text-transform: uppercase;
+  letter-spacing: 3.5px;
 }
 
 .sorting__list {
@@ -503,12 +514,13 @@ img {
 }
 
 .sorting__link {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 39px;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.14px;
-  line-height: 39px;
+
   opacity: 0.3;
 }
 
@@ -531,26 +543,26 @@ img {
 
 .products__image img:focus,
 .products__image img:hover {
-  opacity: 0.7;
   background-color: #eeeeee;
+  opacity: 0.7;
 }
 
 .products__title {
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
   color: #000000;
   letter-spacing: 0.18px;
-  line-height: 24px;
 }
 
 .products__price {
-  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: 0.16px;
-  text-align: right;
   line-height: 24px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-align: right;
+  letter-spacing: 0.16px;
 }
 
 .pagination {
@@ -558,13 +570,13 @@ img {
 }
 
 .pagination__button {
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #000000;
-  letter-spacing: 3.5px;
   line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  color: #000000;
   text-transform: uppercase;
+  letter-spacing: 3.5px;
 }
 
 .pagination__button:focus,
@@ -581,15 +593,16 @@ img {
 }
 
 .pagination__item {
-  font-family: "Gilroy", "Arial Black", sans-serif;
   font-weight: 800;
   font-size: 16px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
   color: #000000;
   letter-spacing: 0.91px;
 }
 
 .pagination__link {
   color: #000000;
+
   opacity: 0.3;
 }
 

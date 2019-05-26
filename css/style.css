@@ -91,8 +91,9 @@ input[type="radio"].visually-hidden {
 
 .search__button:focus,
 .search__button:hover {
-  background-color: #000000;
   color: #ffffff;
+
+  background-color: #000000;
 }
 
 .search__button:active {
@@ -167,13 +168,13 @@ input[type="radio"].visually-hidden {
 }
 
 .dropdown-menu {
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.15px;
-  line-height: 36px;
   list-style: none;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans Light", Arial, sans-serif;
   color: #000000;
   text-transform: none;
+  letter-spacing: 0.15px;
 }
 
 .dropdown-menu__link {
@@ -194,34 +195,34 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__number {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 179.2px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  text-align: right;
   color: #ffffff;
   letter-spacing: 0.36px;
-  text-align: right;
 }
 
 .slider__title {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 47px;
-  letter-spacing: 0.47px;
   line-height: 56px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   color: #000000;
+  letter-spacing: 0.47px;
 }
 
 .slider__features thead {
-  font-family: OpenSans-Light;
   font-size: 13px;
-  letter-spacing: 0.13px;
   line-height: 20px;
+  font-family: OpenSans-Light;
+  letter-spacing: 0.13px;
 }
 
 .slider__value {
-  font-family: Gilroy-Light;
   font-size: 36px;
+  line-height: 48px;
+  font-family: Gilroy-Light;
   color: #000000;
   letter-spacing: 0.36px;
-  line-height: 48px;
 }
 
 .products__list {
@@ -229,11 +230,11 @@ input[type="radio"].visually-hidden {
 }
 
 .products__item {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   color: #000000;
   letter-spacing: 0.18px;
-  line-height: 24px;
 }
 
 .products__link {
@@ -249,11 +250,11 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages__title {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   color: #000000;
   letter-spacing: 0.21px;
-  line-height: 48px;
 }
 
 .brands__list {
@@ -261,11 +262,11 @@ input[type="radio"].visually-hidden {
 }
 
 .about__title {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   color: #000000;
   letter-spacing: 0.21px;
-  line-height: 48px;
 }
 
 .about__list {
@@ -273,23 +274,24 @@ input[type="radio"].visually-hidden {
 }
 
 .about__item {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 16px;
-  color: #000000;
   line-height: 40px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
+  color: #000000;
 }
 
 .contacts__title {
-  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   font-size: 47px;
+  line-height: 48px;
+  font-family: "Gilroy Extra Bold", Arial Black, sans-serif;
   color: #000000;
   letter-spacing: 0.21px;
-  line-height: 48px;
 }
 
 .page-footer {
-  background-color: #464646;
   color: #ffffff;
+
+  background-color: #464646;
 }
 
 .page-footer a {

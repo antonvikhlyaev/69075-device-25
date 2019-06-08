@@ -71,12 +71,34 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .button {
   font: inherit;
 }
 
-.page-header {
+.page-header__wrapper {
+  margin-top: 40px;
+  padding: 50px 60px;
+
   background-color: #f7e29b;
+}
+
+.page-header__nav {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: -40px;
 }
 
 .page-header__logo:focus,
@@ -88,6 +110,12 @@ img {
   opacity: 0.3;
 }
 
+.search__item {
+  width: 540px;
+  margin: 0;
+  padding: 0;
+}
+
 .search__input {
   font: inherit;
 
@@ -96,6 +124,9 @@ img {
 }
 
 .search__button {
+  /* TODO: Временно */
+  display: none;
+
   font: inherit;
 
   background: none;
@@ -115,6 +146,10 @@ img {
 }
 
 .user-nav {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   color: #000000;
 }
@@ -145,6 +180,10 @@ img {
   opacity: 0.3;
 }
 
+.cart {
+  margin-left: auto;
+}
+
 .cart__link {
   color: #000000;
 }
@@ -158,47 +197,12 @@ img {
   opacity: 0.3;
 }
 
-.catalog__dropdown {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial Black", sans-serif;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-}
-
-.catalog__dropdown:focus,
-.catalog__dropdown:hover {
-  opacity: 0.6;
-}
-
-.catalog__dropdown:active {
-  opacity: 0.3;
-}
-
-.catalog__list {
-  /* FIXME: Временно */
-  display: none;
-
-  list-style: none;
-}
-
-.catalog__link {
-  line-height: 36px;
-  color: #000000;
-}
-
-.catalog__link:focus,
-.catalog__link:hover {
-  opacity: 0.6;
-}
-
-.catalog__link:active {
-  opacity: 0.3;
-}
-
 .site-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
   font-weight: 800;
   font-size: 18px;
@@ -207,6 +211,10 @@ img {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+}
+
+.site-nav__item--catalog {
+  width: 540px;
 }
 
 .site-nav__link {
@@ -222,11 +230,73 @@ img {
   opacity: 0.3;
 }
 
-.slider__list {
+.catalog__list {
+  /* TODO: Временно */
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: 0.15px;
+}
+
+.catalog__sublist {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.catalog__link {
+  color: #000000;
+}
+
+.catalog__link:focus,
+.catalog__link:hover {
+  opacity: 0.6;
+}
+
+.catalog__link:active {
+  opacity: 0.3;
+}
+
+.slider__wrapper {
+  background-image: linear-gradient(rgba(240,197,46,0.5) 0,rgba(240,197,46,0.5) 113px,transparent 113px);
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider__left-column {
+  width: 560px;
+}
+
+.slider__right-column {
+  width: 560px;
+}
+
 .slider__number {
+  margin: 0;
+  padding: 0;
+
   font-weight: 800;
   font-size: 179.2px;
   font-family: "Gilroy", "Arial Black", sans-serif;
@@ -262,16 +332,37 @@ img {
 }
 
 .categories__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .categories__item {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Gilroy", "Arial Black", sans-serif;
-  color: #000000;
-  letter-spacing: 0.18px;
+  position: relative;
+
+  width: 160px;
+  margin-right: 40px;
+  padding-top: 180px;
+}
+
+.categories__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #f7e29b;
+}
+
+.categories__item:nth-child(6n) {
+  margin-right: 0;
 }
 
 .categories__link {
@@ -282,15 +373,48 @@ img {
   opacity: 0.3;
 }
 
+.categories__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial Black", sans-serif;
+  color: #000000;
+  letter-spacing: 0.18px;
+}
+
 .advantages {
   background-color: #e5e5e5;
 }
 
+.advantages__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.advantages__left-column {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.advantages__right-column {
+  width: 760px;
+}
+
 .advantages__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .advantages__title {
+  margin: 0;
+  padding: 0;
+
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
@@ -299,8 +423,24 @@ img {
   letter-spacing: 0.21px;
 }
 
+.advantages__text {
+  margin: 0;
+  padding: 0;
+}
+
 .brands__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.brands__item {
+  width: 260px;
 }
 
 .brands__logo {
@@ -327,6 +467,15 @@ img {
   background-image: url(../img/logo-vive--hovered.png);
 }
 
+.page-content__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  width: 560px;
+}
+
 .about__title {
   font-weight: 800;
   font-size: 47px;
@@ -348,6 +497,10 @@ img {
   color: #000000;
 }
 
+.contacts {
+  width: 560px;
+}
+
 .contacts__title {
   font-weight: 800;
   font-size: 47px;
@@ -361,6 +514,17 @@ img {
   color: #ffffff;
 
   background-color: #464646;
+}
+
+.page-footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-footer__logo {
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__logo:focus,
@@ -384,20 +548,47 @@ img {
   color: #ffffff;
 }
 
+.page-footer__middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-footer__address {
+  margin: 0;
+  padding: 0;
+}
+
 .page-footer .site-nav__link {
   color: #ffffff;
+}
+
+.page-footer__phone {
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__phone a {
   color: #ffffff;
 }
 
-.page-footer__copyright:focus,
-.page-footer__copyright:hover {
+.page-footer__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__copyright-link:focus,
+.page-footer__copyright-link:hover {
   opacity: 0.6;
 }
 
-.page-footer__copyright:active {
+.page-footer__copyright-link:active {
   opacity: 0.3;
 }
 

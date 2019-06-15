@@ -1681,7 +1681,6 @@ img {
 
 .sorting__link {
   display: block;
-
   margin: 0;
   padding: 0;
 
@@ -1691,6 +1690,7 @@ img {
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0;
+
   opacity: 0.3;
 }
 
@@ -1721,12 +1721,10 @@ img {
 
 .sorting__arrow {
   display: block;
-
-  margin: 0;
-  padding: 0;
-
   width: 11px;
   height: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting__arrow::before {
@@ -1780,9 +1778,9 @@ img {
   flex-shrink: 0;
   width: 200px;
   margin: 0;
+  padding-top: 70px;
   padding-right: 68px;
   padding-left: 60px;
-  padding-top: 70px;
 
   background-color: #eeeeee;
 }
@@ -1819,7 +1817,6 @@ img {
 
 .filter__fieldset::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
@@ -1828,7 +1825,6 @@ img {
   height: 2px;
 
   background-color: #000000;
-
 }
 
 .filter__legend {
@@ -1846,6 +1842,7 @@ img {
 
 .filter__range {
   position: relative;
+
   margin-top: 9px;
   margin-bottom: 10px;
 }
@@ -1853,14 +1850,14 @@ img {
 .filter__scale {
   height: 2px;
 
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
 }
 
 .filter__bar {
   width: 65%;
   height: 2px;
 
-  background-color: #91C92F;
+  background-color: #91c92f;
 }
 
 .filter__toggle {
@@ -1876,7 +1873,6 @@ img {
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
-
   cursor: pointer;
 }
 
@@ -1898,6 +1894,7 @@ img {
 
 .filter__price {
   display: inline-block;
+  width: 45%;
 
   font-weight: 300;
   font-size: 14px;
@@ -1905,33 +1902,29 @@ img {
   font-family: "Gilroy", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.2);
   letter-spacing: 0;
-
-  width: 45%;
 }
 
 .filter__price input {
   width: 40px;
 
+  font: inherit;
   color: rgba(0, 0, 0, 0.2);
 
-  border: none;
   background: none;
-
-  font: inherit;
+  border: none;
 }
 
 .filter__list {
   margin: 0;
   padding: 0;
 
+  list-style: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.14px;
-
-  list-style: none;
 }
 
 .filter__item {
@@ -1945,6 +1938,7 @@ img {
   display: block;
 
   cursor: pointer;
+
   user-select: none;
 }
 
@@ -1957,21 +1951,20 @@ img {
   height: 23px;
 
   background-image: url(../img/icon__checkbox--off.svg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter__checkbox:checked+label::before {
   content: "";
-
   position: absolute;
 
   width: 27px;
   height: 23px;
 
   background-image: url(../img/icon__checkbox--on.svg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter__radio+label::before {
@@ -1983,21 +1976,20 @@ img {
   height: 25px;
 
   background-image: url(../img/icon__radio--off.svg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter__radio:checked+label::before {
   content: "";
-
   position: absolute;
 
   width: 25px;
   height: 25px;
 
   background-image: url(../img/icon__radio--on.svg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter__button {
@@ -2005,13 +1997,12 @@ img {
 }
 
 .products {
+  flex-shrink: 0;
+  width: 832px;
   margin: 0;
   padding: 0;
   padding-top: 57px;
   padding-left: 72px;
-
-  flex-shrink: 0;
-  width: 832px;
 
   background-color: #ffffff;
 }
@@ -2056,28 +2047,28 @@ img {
   position: absolute;
   top: 177px;
   left: 80px;
+
   display: block;
   width: 200px;
 }
 
 .products__buttons--cart {
   width: 200px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .products__buttons--compare {
+  width: 200px;
   margin: 0;
   padding: 0;
 
-  width: 200px;
-
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
+  line-height: 36px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.13px;
-  text-align: center;
-  line-height: 36px;
 
   background: none;
   border: none;
@@ -2094,16 +2085,14 @@ img {
 
 .products__wrapper {
   display: flex;
-
   margin: 0;
   padding: 0;
 }
 
 .products__title {
+  width: 260px;
   margin: 0;
   padding: 0;
-
-  width: 260px;
 
   font-weight: 800;
   font-size: 18px;
@@ -2118,10 +2107,9 @@ img {
 }
 
 .products__price {
+  width: 100px;
   margin: 0;
   padding: 0;
-
-  width: 100px;
 
   font-weight: 300;
   font-size: 16px;
@@ -2132,12 +2120,11 @@ img {
 }
 
 .pagination {
+  position: relative;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  position: relative;
-
   margin-right: 72px;
   margin-bottom: 77px;
   padding: 20px 0;
@@ -2226,24 +2213,29 @@ img {
   top: 120px;
   left: 50%;
   z-index: 4;
+
   display: block;
-  transform: translateX(-50%);
+
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
 }
 
 .modal__close {
   position: absolute;
-  z-index: 3;
   top: 25px;
   right: 20px;
+  z-index: 3;
+
   width: 55px;
   height: 55px;
+
   font-size: 0;
+
   background-color: #f0c52e;
-  opacity: 0.5;
-  border-radius: 50%;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .modal__close::after,
@@ -2252,8 +2244,10 @@ img {
   position: absolute;
   top: 26px;
   left: 14px;
+
   width: 50%;
   height: 2px;
+
   background-color: #ffffff;
 }
 
@@ -2276,8 +2270,10 @@ img {
 
 .modal--feedback {
   width: 760px;
-  background-color: #fff;
-  padding: 96px 100px 80px
+  padding: 96px 100px 80px;
+  ;
+
+  background-color: #ffffff;
 }
 
 .modal--map {
@@ -2290,11 +2286,13 @@ img {
   top: 0;
   left: 0;
   z-index: 1;
+
   margin: 0;
 }
 
 .modal--map iframe {
   position: relative;
   z-index: 2;
+
   border: none;
 }

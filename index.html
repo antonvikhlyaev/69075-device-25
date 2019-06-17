@@ -22,7 +22,7 @@
               <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
                 <p class="search__item">
                   <label class="visually-hidden" for="search">Поиск по сайту</label>
-                  <input class="search__input" id="search" name="search" type="text" placeholder="Поиск по сайту">
+                  <input class="search__input" id="search" name="search" value="" type="text" placeholder="Поиск по сайту">
                   <button class="search__button" type="submit">Найти</button>
                 </p>
               </form>
@@ -175,7 +175,7 @@
               </div>
               <div class="slider__right-column">
                 <p class="slider__number">03</p>
-                <p class="slider__title">Порхает как бабочка,<br> жалит как пчела!</p>
+                <p class="slider__title">Порхает как бабочка, жалит как пчела!</p>
                 <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
                 <a class="slider__button button" href="#"><span class="button__text">Подробнее</span></a>
@@ -334,9 +334,10 @@
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
         <p class="contacts__map">
-          <!-- TODO: Сделать карту на JS -->
-          <img class="contacts__map-image" src="img/map.png" width="560" height="222"
+          <a class="contacts__map-link" href="map.html">
+            <img class="contacts__map-image" src="img/map.png" width="560" height="222"
             alt="Наш офис находится по адресу: г. Москва, ул. Строителей, 15 ">
+          </a>
         </p>
         <a class="contacts__button button" href="feedback.html">
           <span class="button__text">Напишите нам</span>
@@ -411,7 +412,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal--feedback" style="display: none;">
+  <section class="modal modal--feedback">
     <h2 class=" visually-hidden">Обратная связь</h2>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal__item">
@@ -432,7 +433,7 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
-  <section class="modal modal--map" style="display: none;">
+  <section class="modal modal--map">
     <h2 class="visually-hidden">Как до нас добраться?</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551"

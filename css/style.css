@@ -217,6 +217,7 @@ img {
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   letter-spacing: 0.15px;
+  color: #000000;
 
   background-color: transparent;
   border: none;
@@ -1529,10 +1530,6 @@ img {
   opacity: 0.3;
 }
 
-.modal {
-  display: none;
-}
-
 .inner-page .page-header {
   margin-bottom: 37px;
 }
@@ -1877,7 +1874,7 @@ img {
 }
 
 .filter__toggle:active {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .filter__toggle--min {
@@ -2214,7 +2211,7 @@ img {
   left: 50%;
   z-index: 4;
 
-  display: block;
+  display: none;
 
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   transform: translateX(-50%);

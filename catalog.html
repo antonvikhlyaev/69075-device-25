@@ -227,7 +227,9 @@
               <div class="products__image">
                 <img src="img/products/monopods/1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <div class="products__buttons">
-                  <button class="products__buttons--cart button"><span class="button__text">В корзину</span></button>
+                  <a class="products__buttons--cart button" href="#">
+                    <span class="button__text">В корзину</span>
+                  </a>
                   <button class="products__buttons--compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -244,7 +246,9 @@
               <div class="products__image">
                 <img src="img/products/monopods/2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <div class="products__buttons">
-                  <button class="products__buttons--cart button"><span class="button__text">В корзину</span></button>
+                    <a class="products__buttons--cart button" href="#">
+                      <span class="button__text">В корзину</span>
+                    </a>
                   <button class="products__buttons--compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -261,7 +265,9 @@
               <div class="products__image">
                 <img src="img/products/monopods/3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <div class="products__buttons">
-                  <button class="products__buttons--cart button"><span class="button__text">В корзину</span></button>
+                  <a class="products__buttons--cart button" href="#">
+                    <span class="button__text">В корзину</span>
+                  </a>
                   <button class="products__buttons--compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -278,7 +284,9 @@
               <div class="products__image">
                 <img src="img/products/monopods/4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <div class="products__buttons">
-                  <button class="products__buttons--cart button"><span class="button__text">В корзину</span></button>
+                  <a class="products__buttons--cart button" href="#">
+                    <span class="button__text">В корзину</span>
+                  </a>
                   <button class="products__buttons--compare">Добавить к сравнению</button>
                 </div>
               </div>
@@ -381,38 +389,6 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal--feedback" style="display: none;">
-    <h2 class="visually-hidden">Обратная связь</h2>
-    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="modal__item">
-        <label for="name">Ваше имя:</label>
-        <input class="modal__input" id="name" name="name" type="text" placeholder="Имя Фамилия">
-      </p>
-      <p class="modal__item">
-        <label for="email">Ваш e-mail:</label>
-        <input class="modal__input" id="email" name="email" type="text" placeholder="email@example.com">
-      </p>
-      <p class="modal__item">
-        <label for="mail">Текст письма:</label>
-        <textarea class="modal__textarea" id="mail" name="mail"></textarea>
-      </p>
-      <button class="modal__button button" type="submit"><span class="button__text">Отправить</span></button>
-    </form>
-    <button class="modal__close" type="button" name="modal__close">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-  </section>
-  <section class="modal modal--map" style="display: none;">
-    <h2 class="visually-hidden">Как до нас добраться?</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551"
-      width="960" height="560" style="border:0" allowfullscreen></iframe>
-    <img class="modal__map" src="img/map-big.png" width="960" height="559"
-      alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15">
-    <button class="modal__close" type="button" name="modal__close">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-  </section>
 </body>
 
 </html>

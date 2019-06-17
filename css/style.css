@@ -502,19 +502,12 @@ img {
   flex-direction: row;
   width: 1040px;
   margin: 0;
-  padding-top: 18px;
-  padding-right: 60px;
-  padding-bottom: 34px;
-  padding-left: 60px;
+  padding: 18px 60px 34px 60px;
 
   list-style: none;
-  font-weight: 300;
-  font-size: 15px;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
-  letter-spacing: 0.15px;
 
   background-color: #f7e29b;
 }
@@ -752,7 +745,6 @@ img {
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  font-family: "Open Sans", "Arial", sans-serif;
   letter-spacing: 0.13px;
 }
 
@@ -1156,10 +1148,6 @@ img {
   margin-bottom: 30px;
   padding: 0;
 
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
   letter-spacing: 0;
 }
@@ -1245,10 +1233,6 @@ img {
   margin-bottom: 40px;
   padding: 0;
 
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
   letter-spacing: 0;
 }
@@ -1569,10 +1553,8 @@ img {
   margin-right: 19px;
   padding-right: 19px;
 
-  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 0.14px;
 }
@@ -1684,7 +1666,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0;
 
@@ -1916,10 +1897,8 @@ img {
   padding: 0;
 
   list-style: none;
-  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.14px;
 }
@@ -2062,7 +2041,6 @@ img {
   font-weight: 300;
   font-size: 13px;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.13px;

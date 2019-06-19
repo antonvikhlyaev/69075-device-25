@@ -45,8 +45,8 @@
 @-webkit-keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(-50%) translateX(0);
-            transform: translateX(-50%) translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -54,24 +54,24 @@
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-50%) translateX(-10px);
-            transform: translateX(-50%) translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-50%) translateX(10px);
-            transform: translateX(-50%) translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX(-50%) translateX(0);
-            transform: translateX(-50%) translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -79,16 +79,16 @@
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-50%) translateX(-10px);
-            transform: translateX(-50%) translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(-50%) translateX(10px);
-            transform: translateX(-50%) translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -576,9 +576,9 @@ img {
 .catalog {
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 247px;
+  width: 250px;
   margin: 0;
-  margin-right: 293px;
+  margin-right: 290px;
   padding: 0;
 }
 
@@ -603,7 +603,7 @@ img {
   content: "";
   position: absolute;
   top: 3px;
-  right: 0;
+  right: 2px;
 
   width: 16px;
   height: 16px;
@@ -971,6 +971,7 @@ img {
   background-image: url(../img/icon__slider--empty.svg);
   background-repeat: none;
   background-position: center;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -1800,6 +1801,10 @@ img {
           transform: translateY(-50%);
 }
 
+.page-footer__decoration-line {
+  display: block;
+  width: 80px;
+}
 
 .social {
   display: -webkit-box;
@@ -1809,14 +1814,22 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin: 0;
+  width: 142px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
 }
 
 .social__item {
-  margin-left: 23px;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
@@ -1824,6 +1837,7 @@ img {
   width: 32px;
   height: 32px;
 
+  border-radius: 50%;
   opacity: 0.3;
 }
 
@@ -2385,6 +2399,7 @@ img {
   background-image: url(../img/icon__radio--off.svg);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
 }
 
 .filter__radio:checked + label::before {

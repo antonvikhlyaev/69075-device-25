@@ -116,7 +116,7 @@
           <ul class="slider__list">
             <li class="slider__item" id="slide--01">
               <div class="slider__left-column">
-                <img class="slider__img" src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
+                <img class="slider__img slider__img--monopod" src="img/slider-1.png" width="384" height="486" alt="Монопод для селфи">
               </div>
               <div class="slider__right-column">
                 <p class="slider__number">01</p>
@@ -146,7 +146,7 @@
             </li>
             <li class="slider__item" id="slide--02">
               <div class="slider__left-column">
-                <img class="slider__img" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+                <img class="slider__img slider__img--fitness-bracelet" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <div class="slider__right-column">
                 <p class="slider__number">02</p>
@@ -171,7 +171,7 @@
             </li>
             <li class="slider__item" id="slide--03">
               <div class="slider__left-column">
-                <img class="slider__img" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+                <img class="slider__img slider__img--quadcopter" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
               </div>
               <div class="slider__right-column">
                 <p class="slider__number">03</p>
@@ -214,7 +214,7 @@
           <li class="categories__item">
             <a class="categories__link" href="catalog.html">
               <div class="categories__block categories__block--monopods">
-                <h3 class="categories__title">Моноподы<br> для селфи</h3>
+                <h3 class="categories__title">Моноподы для&nbsp;селфи</h3>
               </div>
             </a>
           </li>
@@ -255,31 +255,32 @@
         <div class="advantages__wrapper">
           <div class="advantages__left-column">
             <div class="advantages__buttons">
-              <button class="advantages__button advantages__button--active button">
+              <button class="advantages__button advantages__button--active"
+                onclick="currentSlide(1)">
                 <span class="button__text">Доставка</span>
               </button>
-              <button class="advantages__button button">
+              <button class="advantages__button" onclick="currentSlide(2)">
                 <span class="button__text">Гарантия</span>
               </button>
-              <button class="advantages__button button">
+              <button class="advantages__button" onclick="currentSlide(3)">
                 <span class="button__text">Кредит</span>
               </button>
             </div>
           </div>
           <div class="advantages__right-column">
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--delivery">
+              <li class="advantages__item advantages__item--delivery advantages__item--active">
                 <h3 class="advantages__title">Доставка</h3>
                 <p class="advantages__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
                   бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
               </li>
-              <li class="advantages__item advantages__item--warranty" style="display: none;">
+              <li class="advantages__item advantages__item--warranty">
                 <h3 class="advantages__title">Гарантия</h3>
                 <p class="advantages__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
                   переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
               </li>
-              <li class="advantages__item advantages__item--credit" style="display: none;">
+              <li class="advantages__item advantages__item--credit">
                 <h3 class="advantages__title">Кредит</h3>
                 <p class="advantages__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
                   наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -293,23 +294,23 @@
       <div class="brands__container container">
         <h2 class="visually-hidden">Бренды</h2>
         <ul class="brands__list">
-          <li class="brands__item brands__item--dji">
-            <a class="brands__link" href="#">
+          <li class="brands__item">
+            <a class="brands__link brands__link--dji" href="#">
               <img class="brands__logo" src="img/logo-dji.png" width="260" height="100" alt="Логотип DJI">
             </a>
           </li>
-          <li class="brands__item brands__item--spgadgets">
-            <a class="brands__link" href="#">
+          <li class="brands__item">
+            <a class="brands__link brands__link--spgadgets" href="#">
               <img class="brands__logo" src="img/logo-spgadgets.png" width="260" height="100" alt="Логотип SPGadgets">
             </a>
           </li>
-          <li class="brands__item brands__item--gopro">
-            <a class="brands__link" href="#">
+          <li class="brands__item">
+            <a class="brands__link brands__link--gopro" href="#">
               <img class="brands__logo" src="img/logo-gopro.png" width="260" height="100" alt="Логотип GoPro">
             </a>
           </li>
-          <li class="brands__item brands__item--vive">
-            <a class="brands__link" href="#">
+          <li class="brands__item">
+            <a class="brands__link brands__link--vive" href="#">
               <img class="brands__logo" src="img/logo-vive.png" width="260" height="100" alt="Логотип Vive">
             </a>
           </li>
@@ -339,7 +340,7 @@
             alt="Наш офис находится по адресу: г. Москва, ул. Строителей, 15 ">
           </a>
         </p>
-        <a class="contacts__button button" href="feedback.html">
+        <a class="contacts__button button button--feedback" href="feedback.html">
           <span class="button__text">Напишите нам</span>
         </a>
       </section>
@@ -425,7 +426,7 @@
       </p>
       <p class="modal__item">
         <label for="mail">Текст письма:</label>
-        <textarea class="modal__textarea" id="mail" name="mail"></textarea>
+        <textarea class="modal__textarea" id="mail" name="mail" placeholder="В свободной форме"></textarea>
       </p>
       <button class="modal__button button" type="submit"><span class="button__text">Отправить</span></button>
     </form>
@@ -437,13 +438,15 @@
     <h2 class="visually-hidden">Как до нас добраться?</h2>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4498.1553158150755!2d37.5284326!3d55.6876376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522103678551"
-      width="960" height="560" style="border:0" allowfullscreen></iframe>
+      width="960" height="560" allowfullscreen></iframe>
     <img class="modal__map" src="img/map-big.png" width="960" height="559"
       alt="Интернет-магазин расположен по адресу: г. Москва, ул. Строителей 15">
     <button class="modal__close" type="button" name="modal__close">
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
+  <div class="modal__overlay"></div>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

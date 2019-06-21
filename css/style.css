@@ -2017,7 +2017,6 @@ img {
   -ms-flex-direction: row;
       flex-direction: row;
   width: 100%;
-  /* align-items: center; */
   margin: 0;
   padding: 0;
 
@@ -2366,10 +2365,6 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
-
-/* .filter__item label:hover::before {
-  opacity: 0.6;
-} */
 
 .filter__checkbox + label::before {
   content: "";

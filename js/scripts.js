@@ -120,6 +120,8 @@ window.addEventListener("keydown", function (e) {
 modalFeedbackForm.addEventListener('submit', function (e) {
   if (!modalFeedbackName.value || !modalFeedbackEmail.value || !modalFeedbackMail.value) {
     e.preventDefault();
+    modalFeedback.classList.remove("modal--error");
+    modalFeedback.offsetWidth = modalFeedback.offsetWidth;
     modalFeedback.classList.add('modal--error');
   } else {
     if (isStorageSupport) {

@@ -1830,7 +1830,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
       flex-direction: row;
-  width: 144px;
+  min-width: 144px;
   margin: 0 auto;
   padding: 0;
 
@@ -1841,6 +1841,10 @@ img {
   width: 32px;
   height: 32px;
   margin-right: 24px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
